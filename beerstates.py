@@ -11,9 +11,6 @@ shapename = 'admin_1_states_provinces_lakes_shp'
 states_shp = shpreader.natural_earth(resolution='110m',
                                      category='cultural', name=shapename)
 
-ax.background_patch.set_visible(False)
-ax.outline_patch.set_visible(False)
-
 ax.set_title('Beers from Each State')
 
 states = ["AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DC", "DE", "FL", "GA",
@@ -22,11 +19,10 @@ states = ["AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DC", "DE", "FL", "GA",
           "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC",
           "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY"]
 
-nothad = ["AL", "AK", "AZ", "AR", 
-          "HI", "ID", "KS",    
-          "MS", "MO", "MT", "NE", "NV", "NH", "NJ",
-          "NM", "ND", "RI", 
-          "SD", "WY"]
+nothad = ["AL", "AK",
+          "ID", "KS",    
+          "MS", "NE", "NV",
+          "ND", "SD", "WY"]
 
 for astate in shpreader.Reader(states_shp).records():
 

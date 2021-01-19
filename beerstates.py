@@ -20,7 +20,7 @@ states = ["AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DC", "DE", "FL", "GA",
           "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY"]
 
 nothad = ["AL", "AK",
-          "ID", "KS",    
+          "KS",    
           "MS", "NE", "NV",
           "SD", "WY"]
 

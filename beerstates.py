@@ -21,7 +21,7 @@ states = ["AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DC", "DE", "FL", "GA",
 
 nothad = ["AL", "AK",
           "KS",    
-          "MS", "NE", "NV",
+          "MS", "NE",
           "SD"]
 
 for astate in shpreader.Reader(states_shp).records():
